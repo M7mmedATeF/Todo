@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+:root {
+    --main-color: #000;
+    --secondary-color: #333;
+    --text-color: #fff;
+    --pop-color: #055dc2;
+    --pop-darker-color: #054da0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    user-select: none;
+}
+
+.outter {
+    background-color: #222;
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #111;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--pop-color);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--pop-darker-color);
+}
+
+ion-icon {
+    pointer-events: none;
+}

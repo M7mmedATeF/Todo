@@ -1,0 +1,105 @@
+<div class="container">
+    <div class="home">
+        <div class="todo">
+            <div class="head">
+                <div class="left">
+                    متراكم بسبب المرقعة
+                </div>
+                <div class="right">
+                    <button><ion-icon name="add-outline"></ion-icon></button>
+                </div>
+            </div>
+
+            <div class="tasks newTask" (drop)="drop($event)" (dragover)="allowDrop($event)">
+                <div class="task" *ngFor="let task of newTasks" id="task#{{task.id}}" draggable="true" (dragstart)="drag($event,task)">
+                    <div class="headline">
+                        <div class="headInner">
+                            <div>
+                                <h4>{{task.headline | string}}</h4>
+                            </div>
+                            <div class="viewTask">
+                                <button (click)="openTaskViewer(task.id)">
+                                    <div *ngIf="task.seen">
+                                        <ion-icon  name="eye-outline"></ion-icon>
+                                    </div>
+                                    <div *ngIf="!(task.seen)">
+                                        <ion-icon  name="eye"></ion-icon>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="time">&nbsp;&nbsp;{{task.date }}</div>
+                            <div class="important" [style.background]="task.priority"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="progressTask">
+            <div class="head">
+                <div class="left">
+                    شغال عليها
+                </div>
+                <div class="right">
+                    <button><ion-icon name="add-outline"></ion-icon></button>
+                </div>
+            </div>
+
+            <div class="tasks progressTask" (drop)="drop($event)" (dragover)="allowDrop($event)">
+
+            </div>
+        </div>
+
+        <div class="done">
+            <div class="head">
+                <div class="left">
+                    الحمدلله الذي بنعمته تتم الصالحات
+                </div>
+                <div class="right">
+                    <button><ion-icon name="add-outline"></ion-icon></button>
+                </div>
+            </div>
+
+            <div class="tasks doneTasks" (drop)="drop($event)" (dragover)="allowDrop($event)">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="TaskView">
+    <div class="layout" (click)="clsTaskViewer()">
+        <div class="clsBTN">
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="viewer">
+        <div class="task col-md-9">
+            <h4>{{headline}}</h4>
+            <hr>
+            <p [innerHTML]="details"></p>
+        </div>
+        <div class="options col-md-3">
+            <div>
+                <p class="statu">الحالة : </p>
+                <div class="status">
+                    <button tip="مهمة" (click)="periority($event,'rgb(216, 36, 13)')"></button>
+                    <button tip="متوسطة" class="medium" (click)="periority($event,'rgb(224, 116, 14)')"></button>
+                    <button tip="ضعيفة" class="low" (click)="periority($event,'rgb(6, 192, 68)')"></button>
+                    <button tip="فاكس" class="verylow" (click)="periority($event,'rgb(139, 139, 139)')"></button>
+                </div>
+                <hr>
+                <p>تاريخ الإنتهاء :</p>
+                <div class="deadline">
+                    <input type="datetime-local" min="2021-10-03T00:00" max="2022-10-3T00:00">
+                </div>
+            </div>
+            <div class="endBTN">
+                <button class="done">إنتهت</button>
+            </div>
+        </div>
+    </div>
+</div>

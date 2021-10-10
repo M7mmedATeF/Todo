@@ -1,0 +1,153 @@
+.addTask {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.addTask .addController {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 2em;
+    border-radius: 25px;
+    width: 85vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+}
+
+.addTask .addController .err {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+}
+
+.addTask .addController h2 {
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.addTask .addController p {
+    margin: 5px 10px;
+}
+
+.addTask .addController .dateAndTime {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.addTask .addController .dateAndTime input {
+    margin: 10px 2px;
+}
+
+.addTask .addController input,
+.addTask .addController textarea {
+    padding: 20px;
+    color: #000;
+    background-color: rgba(34, 34, 34, 0.849);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.addTask .addController textarea {
+    min-height: 5vh;
+    text-align: right;
+    direction: ltr;
+}
+
+.addTask .addController .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.addTask .addController .footer .priority {
+    display: flex;
+    align-items: center;
+}
+
+.addTask .addController .footer .save button {
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(26, 26, 26);
+    transition: 0.3s all ease-in-out;
+}
+
+.addTask .addController .footer .save button:hover {
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+}
+
+.addTask .addController .footer .priority button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 10px solid rgb(216, 36, 13);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+
+.addTask .addController .footer .priority .medium {
+    background-color: rgb(224, 116, 14);
+    border: 10px solid rgb(224, 116, 14);
+}
+
+.addTask .addController .footer .priority .low {
+    background-color: transparent;
+    border: 10px solid rgb(6, 192, 68);
+}
+
+.addTask .addController .footer .priority .verylow {
+    background-color: transparent;
+    border: 10px solid rgb(139, 139, 139);
+}
+
+.addTask .addController .footer .priority button:hover::before {
+    display: flex;
+    opacity: 1;
+}
+
+.addTask .addController .footer .priority button::before {
+    content: attr(tip);
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #aaa;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    animation: fadeInView 0.3s;
+}
+
+@keyframes fadeInView {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

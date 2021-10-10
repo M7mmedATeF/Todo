@@ -1,0 +1,26 @@
+<div class="addTask">
+    <div class="addController">
+        <div class="alert alert-danger err" *ngIf="((head.touched) && date.value == '') || (head.invalid)">
+            <p>العنوان لازم يكون اكتر من 3 حروف</p>
+            <p>العنوان والتاريخ مطلوبين</p>
+        </div>
+
+        <h2>تاسكاية جديدة</h2>
+        <hr>
+        <input type="text" #head='ngModel' [(ngModel)]="task.headline" placeholder="عنوان التاسكاية *">
+        <textarea #details='ngModel' placeholder="( يمكن كتابة كود HTML ) التفاصيل" [(ngModel)]="task.details"></textarea>
+        <input type="date" id="date" #date [(ngModel)]="task.date">
+        <div class="footer">
+            <div class="priority">
+                مدي الأهمية :
+                <button tip="مهمة" (click)="periority($event,'rgb(216, 36, 13)')"></button>
+                <button tip="متوسطة" class="medium" (click)="periority($event,'rgb(224, 116, 14)')"></button>
+                <button tip="ضعيفة" class="low" (click)="periority($event,'rgb(6, 192, 68)')"></button>
+                <button tip="فاكس" class="verylow" (click)="periority($event,'rgb(139, 139, 139)')"></button>
+            </div>
+            <div class="save" *ngIf="date.value != '' ">
+                <button (click)="save()">إضافة</button>
+            </div>
+        </div>
+    </div>
+</div>

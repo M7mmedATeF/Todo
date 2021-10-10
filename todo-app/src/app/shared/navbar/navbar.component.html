@@ -1,0 +1,41 @@
+<nav>
+    <div class="logo">
+        <h1>
+            <div>
+                <ion-icon name="checkbox"></ion-icon>
+                <div class="text">
+                    <p>تاسكاية</p>
+                </div>
+            </div>
+
+            <p class="mini">ياكش نحس ع دمنا ونشتغل </p>
+        </h1>
+
+    </div>
+
+    <div class="menuBTN" (click)="pnClsNAV()">
+        <button><ion-icon name="menu"></ion-icon></button>
+    </div>
+
+
+    <div class="menuView" (click)="pnClsNAV()">
+        <div class="bgText">
+            <p>الرئيسية</p>
+        </div>
+
+        <div class="links">
+            <button class="clsBTN"><ion-icon name="close-outline"></ion-icon></button>
+            <ul>
+                <li>
+                    <a routerLink="/Home">الرئيسية</a>
+                </li>
+                <li>
+                    <a routerLink="/Add-Task">حط تاسكاية</a>
+                </li>
+                <li>
+                    <a>منتهي</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap');
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+    text-align: right;
+    flex-wrap: wrap;
+    padding: 0 4em;
+}
+
+.notFound p {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.notFound p.goto {
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.notFound .links {
+    padding-right: 0.5em;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.notFound .links a {
+    font-size: 28px;
+    display: block;
+    padding: 10px;
+    border-right: 0px solid #FFC727;
+    transition: 0.3s all ease-in;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.notFound .links a:hover {
+    color: #FFC727;
+    background-color: #333;
+    border-right: 3px solid #FFC727;
+    padding-right: 20px;
+}

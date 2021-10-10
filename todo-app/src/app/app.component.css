@@ -1,0 +1,5 @@
+.viewer {
+    height: 80vh;
+    overflow: auto;
+    padding: 0;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap');
+nav {
+    background-color: var(--main-color);
+    padding: 0 2em;
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    user-select: none;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+    text-align: center;
+}
+
+nav h1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav h1 p {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+nav h1 .mini {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav h1 ion-icon {
+    font-size: 1em;
+    margin-left: 5px;
+    --ionicon-stroke-width: 0.6em;
+}
+
+nav .menuBTN button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    border-radius: 10px;
+    color: #fff;
+}
+
+nav .menuBTN button:hover {
+    background-color: var(--secondary-color);
+}
+
+nav .menuView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+nav .menuView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1000;
+}
+
+nav .menuView .bgText {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 10em;
+    text-transform: uppercase;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.733), rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s;
+    letter-spacing: -1px;
+}
+
+nav .menuView button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+nav .menuView .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menuView .links ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav .menuView .links ul li {
+    margin: 10px 0;
+}
+
+nav .menuView .links ul li a {
+    font-size: 4em;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translatex(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    nav {
+        padding: 0 1em;
+    }
+    nav h1 .mini {
+        font-size: 11px;
+    }
+    nav h1 {
+        font-size: 18px;
+    }
+    nav h1 ion-icon {
+        font-size: 2em;
+    }
+    nav .menuView .bgText {
+        font-size: 4em;
+        text-align: center;
+    }
+}
