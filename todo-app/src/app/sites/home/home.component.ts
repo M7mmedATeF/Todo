@@ -12,11 +12,11 @@ export class HomeComponent implements OnInit {
   headline;
   details;
   oppendID;
-  task : taskClass;
-  newTasks : any = [];
+  taskaya : taskClass;
+  newTasks : any[];
   
   constructor(private http:ApisService) {  
-    http.get().subscribe((data: any)=>{
+    http.getNewTask().subscribe((data: any)=>{
       this.newTasks = data;
       
     })
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   }
   
   intializeTaskEdit(){
-    this.task;
+
   }
 
   periority(ev,color){
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
       BTNs[x].style.backgroundColor = "transparent";
     }
     ev.target.style.backgroundColor = color;
-    this.task.priority = color;
+    this.taskaya.priority = color;
   }
 
   openTaskViewer(id){

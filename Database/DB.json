@@ -1,53 +1,58 @@
 {
-    "Tasks": [{
-        "id": 1,
-        "newTasks": [
-          {
-                "priority": "rgb(216, 36, 13)",
-                "seen": true,
-                "headline": "الإنتهاء من الصفحة الرئيسية",
-                "date": "2021-10-21",
-                "id": 1,
-                "statue": "workOn"
-            },
-            {
-                "priority": "rgb(224, 116, 14)",
-                "seen": true,
-                "details": "",
-                "headline": "task1",
-                "date": "2021-10-21",
-                "id": 2,
-                "statue": "todo"
-            },
-            {
-                "priority": "rgb(139, 139, 139)",
-                "seen": true,
-                "details": "<ul>\n        <li><a href=\"https://google.com\" target=\"_blanck\">Google</a></li>\n        <li><a href=\"https://www.facebook.com/mohanmed.atef.9\" target=\"_blanck\">Facebook</a></li>\n    </ul>",
-                "headline": "تاسكاية جديدة",
-                "date": "2021-10-19",
-                "id": 3,
-                "statue": "todo"
-            },
-            {
-                "priority": "rgb(139, 139, 139)",
-                "seen": true,
-                "details": "<ul>\n<li> محمد </li>\n<li> محمد </li>\n<li> محمد </li>\n</ul>",
-                "headline": "اي عنوان",
-                "date": "2021-10-20",
-                "id": 4,
-                "statue": "todo"
-            },
-            {
-                "priority": "rgb(224, 116, 14)",
-                "seen": true,
-                "details": "شيسيبيسرسشيشمسكي",
-                "headline": "تاسكاية جديدة 3",
-                "date": "2021-10-20",
-                "id": 5,
-                "statue": "done"
-            }
-        ],
-        "progressTasks": [],
-        "doneTasks": []
-    }]
+  "newTasks": [
+    {
+      "priority": "rgb(216, 36, 13)",
+      "seen": true,
+      "headline": "الإنتهاء من الصفحة الرئيسية",
+      "date": "2021-10-21",
+      "id": 1,
+      "statue": "workOn"
+    },
+    {
+      "priority": "rgb(224, 116, 14)",
+      "seen": true,
+      "details": "",
+      "headline": "task1",
+      "date": "2021-10-21",
+      "id": 2,
+      "statue": "todo"
+    },
+    {
+      "priority": "rgb(139, 139, 139)",
+      "seen": true,
+      "details": "<ul>\n        <li><a href=\"https://google.com\" target=\"_blanck\">Google</a></li>\n        <li><a href=\"https://www.facebook.com/mohanmed.atef.9\" target=\"_blanck\">Facebook</a></li>\n    </ul>",
+      "headline": "تاسكاية جديدة",
+      "date": "2021-10-19",
+      "id": 3,
+      "statue": "todo"
+    },
+    {
+      "priority": "rgb(139, 139, 139)",
+      "seen": true,
+      "details": "<ul>\n<li> محمد </li>\n<li> محمد </li>\n<li> محمد </li>\n</ul>",
+      "headline": "اي عنوان",
+      "date": "2021-10-20",
+      "id": 4,
+      "statue": "todo"
+    },
+    {
+      "priority": "rgb(224, 116, 14)",
+      "seen": true,
+      "details": "شيسيبيسرسشيشمسكي",
+      "headline": "تاسكاية جديدة 3",
+      "date": "2021-10-20",
+      "id": 5,
+      "statue": "done"
+    },
+    {
+      "priority": "rgb(216, 36, 13)",
+      "seen": true,
+      "details": "<ul>\n<li>\nasdasdasdas\n</li>\n<li>\nasdasdasdas\n</li>\n<li>\nasdasdasdas\n</li>\n<li>\nasdasdasdas\n</li>\n</ul>",
+      "headline": "sadasdas",
+      "date": "2021-10-19",
+      "id": 6
+    }
+  ],
+  "progressTasks": [],
+  "doneTasks": []
 }
